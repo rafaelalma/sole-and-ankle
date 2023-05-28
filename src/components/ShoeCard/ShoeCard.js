@@ -68,22 +68,21 @@ const ImageWrapper = styled.div`
 `
 
 const Image = styled.img`
-  width: 340px;
-  height: 312px;
+  width: 100%;
   border-radius: 16px 16px 4px 4px;
 `
 
 const Flag = styled.div`
-  height: 32px;
+  height: 2rem;
   background-color: ${(p) =>
     p.variant === 'on-sale' ? COLORS.primary : COLORS.secondary};
   border-radius: 2px;
   width: fit-content;
-  padding: 0 8px;
+  padding: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: ${WEIGHTS.medium};
+  font-weight: ${WEIGHTS.bold};
   font-size: ${14 / 16}rem;
   color: ${COLORS.white};
   line-height: 1rem;
@@ -97,6 +96,7 @@ const Row = styled.div`
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  gap: 32px;
 `
 
 const Name = styled.h3`

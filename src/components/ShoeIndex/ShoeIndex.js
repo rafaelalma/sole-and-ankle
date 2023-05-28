@@ -48,15 +48,16 @@ const Wrapper = styled.div`
 `
 
 const LeftColumn = styled.div`
-  flex: 1;
+  flex-basis: 248px;
 `
 
 const MainColumn = styled.div`
-  flex: 4;
+  flex: 1;
 `
 
 const Header = styled.header`
   display: flex;
+  align-items: baseline;
 `
 
 const Title = styled.h2`
