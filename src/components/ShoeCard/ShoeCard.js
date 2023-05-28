@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components/macro';
+import React from 'react'
+import styled from 'styled-components/macro'
 
-import { COLORS, WEIGHTS } from '../../constants';
-import { formatPrice, pluralize, isNewShoe } from '../../utils';
-import Spacer from '../Spacer';
+import { COLORS, WEIGHTS } from '../../constants'
+import { formatPrice, pluralize, isNewShoe } from '../../utils'
+import Spacer from '../Spacer'
 
 const ShoeCard = ({
   slug,
@@ -47,40 +47,47 @@ const ShoeCard = ({
         </Row>
       </Wrapper>
     </Link>
-  );
-};
+  )
+}
 
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
-`;
+`
 
-const Wrapper = styled.article``;
+const Wrapper = styled.article``
 
 const ImageWrapper = styled.div`
   position: relative;
-`;
+`
 
-const Image = styled.img``;
+const Image = styled.img`
+  width: 340px;
+  height: 312px;
+  border-radius: 16px 16px 4px 4px;
+`
 
 const Row = styled.div`
   font-size: 1rem;
-`;
+  display: flex;
+  align-items: baseline;
+`
 
 const Name = styled.h3`
   font-weight: ${WEIGHTS.medium};
   color: ${COLORS.gray[900]};
-`;
+  margin-right: auto;
+`
 
-const Price = styled.span``;
+const Price = styled.span``
 
 const ColorInfo = styled.p`
   color: ${COLORS.gray[700]};
-`;
+`
 
 const SalePrice = styled.span`
   font-weight: ${WEIGHTS.medium};
   color: ${COLORS.primary};
-`;
+`
 
-export default ShoeCard;
+export default ShoeCard
